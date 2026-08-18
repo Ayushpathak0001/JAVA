@@ -13,9 +13,9 @@ public class permutations {
         }
     }
     public static void main(String[]args){
-        String str="abcde";
+        String str="abc";
         printPerm(str,"");
 
     }
 }
-    //timecomplexity O(n!)
+    //timecomplexity O(n*n!)
