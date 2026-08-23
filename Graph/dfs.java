@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 
 
-public class dfs {
+public class dfs {  // time complexity O(V+E)
      static class Edge{
         int src;
         int dest;
