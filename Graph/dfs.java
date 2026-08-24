@@ -59,13 +59,15 @@ public class dfs {  // time complexity O(V+E)
     ArrayList<Edge>graph[]=new ArrayList[V];
     createGraph(graph);
 
-    boolean vis[]=new boolean[V];
-    for(int i=0;i<V;i++){
+    boolean vis[]=new boolean[V];       
+    /* for(int i=0;i<V;i++){ // when  dfs is seperated like bfs seperated where elements are in different sets
+    
         if(vis[i]== false){
             dfs(graph,i,vis);
         }
 
-    }
+    }  */
+     dfs(graph,0,vis);
     System.out.println();
    }
 }
