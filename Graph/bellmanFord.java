@@ -51,6 +51,19 @@ public class bellmanFord { //timecomplexity O(E.V)
             }
 
         }
+        for(int i=0;i<V;i++){ // detects negative cycle 
+                for(int j=0;j<graph[i].size();j++){  //O(E)
+                    Edge e=graph[i].get(j);
+                    int u=e.src;
+                    int v=e.dest;
+
+                    if(dist[u]!= Integer.MAX_VALUE && dist[u]+e.wt<dist[v]){
+                        dist[v]=dist[u]+e.wt;
+                    }
+
+                }
+            }
+        
         for(int i=0;i<dist.length;i++){
             System.out.print(dist[i]+" ");
 
